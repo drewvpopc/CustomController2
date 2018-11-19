@@ -1,0 +1,45 @@
+.controller.ds4.white {
+    background: url(assets/base.png);
+}
+.ds4.white .face {
+    filter: grayscale() brightness(2.8);
+}
+.ds4.white .face.pressed {
+    filter: none;
+    background-position-y: 0;
+}
+ .ds4.white .stick {;
+    filter: grayscale() brightness(2.8);
+}
+.ds4.white .stick.pressed {
+    filter: none;
+    background-position-x: 0 !important;
+}
+ .ds4.white .button {
+    filter: invert(1) hue-rotate(180deg);
+}
+.ds4.white .button.pressed {
+    filter: sepia() invert(1) brightness(3) hue-rotate(120deg) contrast(0.8);
+}
+ .ds4.white .start {
+    transform: translate(0.5px);
+}
+.ds4.white .back {
+    transform: translate(-0.5px);
+}
+.ds4.white .start.pressed, .ds4 .back.pressed {
+    background: rgb(210, 30, 30);
+    border-radius: 50px;
+}
+ .ds4.white .touchpad.pressed {
+    background: url('https://gamepadviewer.com/ps4-assets/touchpad.svgz');
+    filter: brightness(0.1) sepia() contrast(1.3) brightness(25);
+}
+ .ds4.white .bumper.pressed, .ds4.white .trigger {
+    filter: hue-rotate(180deg) brightness(0.65) contrast(4) brightness(0.8);
+}
+ .ds4 .meta.pressed {
+    background: rgba(255, 0, 0, 0.6);
+    border-radius: 50%;
+    transform: translateY(1px);
+}
